@@ -126,7 +126,7 @@
     </style>
 </head>
 
-<body>
+<body onclick="startMusic()">
 
     <div class="logo">
         <img src="gun.gif" class="gun left-gun">
@@ -141,7 +141,17 @@
 
     <div class="astra" href="https://zmail.wtf">astra was here</div>
     <br>
-```html id="p9k3xz"
+<audio id="music" loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+<script>
+function startMusic() {
+    const music = document.getElementById("music");
+    music.play();
+}
+</script>
+
+id="p9k3xz"
 <div class="code-box">
     <pre><code>Résumé de la vulnérabilité — Injection de commandes L’application présente une vulnérabilité d’injection de commandes système (OS Command Injection), car des données contrôlées par l’utilisateur provenant du fichier CSV sont directement intégrées dans des commandes
 
@@ -174,7 +184,6 @@ doit être corrigée en traitant les données du CSV comme de simples données e
     word-wrap: break-word;
 }
 </style>
-```
 
 <div id="black-overlay"></div>
 
